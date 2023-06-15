@@ -1,5 +1,5 @@
 import './style.scss'
-const ArticlesReadMore= () => {
+const WorkProgress= () => {
     const img = 'articles_mainpage.avif'
     return (
         <div className="Articles_More_"
@@ -15,4 +15,4 @@ const ArticlesReadMore= () => {
     )
 }
 
-export default ArticlesReadMore
+export default WorkProgress

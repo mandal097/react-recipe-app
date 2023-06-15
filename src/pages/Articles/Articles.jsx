@@ -12,7 +12,7 @@ const Articles = () => {
                         <p>Eating mindfully benefits both mind and body. Not only will you digest your food better, but you might even rekindle the joy of eating.  Explore this article to learn practical ways to eat mindfully in a moment.</p>
                         <div className="read_more_btn"
                             onClick={() => {
-                                navigate(`/articles/brief/900`);
+                                navigate(`/progress`);
                                 window.scroll({
                                     top: 0,
                                     behavior: 'smooth'

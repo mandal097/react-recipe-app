@@ -8,9 +8,9 @@ import LoginForm from './pages/Login/LoginForm'
 import Support from './pages/Support/Support'
 import Recipe from './pages/Recipe/Recipe'
 import Articles from './pages/Articles/Articles'
-import ArticlesReadMore from './pages/ArticlesReadMore/ArticlesReadMore'
 import SearchRecipe from './pages/SearchRecipe/SearchRecipe'
 import AllRecipes from './pages/AllRecipes/AllRecipes'
+import WorkProgress from './pages/WorkProgress/WorkProgress'
 
 
 function App() {
@@ -23,8 +23,10 @@ function App() {
           <Route path='/signin' element={<LoginForm />} />
           <Route path='allrecipe' element={<AllRecipes />} />
           <Route path='/recipe/:id' element={<Recipe />} />
-          <Route path='articles' element={<Articles />} />
-          <Route path='articles/brief/:id' element={<ArticlesReadMore />} />
+          <Route path='/articles' element={<Articles />} />
+          <Route path='/progress' element={<WorkProgress />} />
+          <Route path='/features' element={<WorkProgress />} />
+          <Route path='/premium' element={<WorkProgress />} />
           <Route path='search/:name' element={<SearchRecipe />} />
           <Route path='help' element={<Support />} />
           <Route path='*' element={<ErrorPage />} />

@@ -116,24 +116,7 @@ const Header = () => {
                     }}>
                     </div>
                     <div className="middle">
-                        <div className={scrolled ? 'navsScrolled dropdownScrolled' : 'navs dropdown'}
-                            onClick={() => {
-                                navigate('/features');
-                                window.scroll({
-                                    top: 0,
-                                    behavior: 'auto'
-                                })
-                            }}
-                        >Features</div>
-                        <div className={scrolled ? 'navsScrolled' : 'navs'}
-                            onClick={() => {
-                                navigate('/*');
-                                window.scroll({
-                                    top: 0,
-                                    behavior: 'auto'
-                                })
-                            }}
-                        >Premium</div>
+
                         <div className={scrolled ? 'navsScrolled' : 'navs'}
                             onClick={() => {
                                 navigate('/allrecipe');
@@ -143,6 +126,7 @@ const Header = () => {
                                 })
                             }}
                         >recipes</div>
+
                         <div className={scrolled ? 'navsScrolled dropdownScrolled' : 'navs dropdown'}
                             onClick={() => {
                                 navigate('/articles');
@@ -152,6 +136,7 @@ const Header = () => {
                                 })
                             }}
                         >articles</div>
+
                         <div className={scrolled ? 'navsScrolled' : 'navs'}
                             onClick={() => {
                                 navigate('/*');
@@ -161,6 +146,7 @@ const Header = () => {
                                 })
                             }}
                         >cookbook</div>
+
                         <div className={scrolled ? 'navsScrolled' : 'navs'} onClick={() => {
                             navigate('/help');
                             window.scroll({
@@ -168,6 +154,27 @@ const Header = () => {
                                 behavior: 'auto'
                             })
                         }}>support</div>
+
+                        <div className={scrolled ? 'navsScrolled dropdownScrolled' : 'navs dropdown'}
+                            onClick={() => {
+                                navigate('/features');
+                                window.scroll({
+                                    top: 0,
+                                    behavior: 'auto'
+                                })
+                            }}
+                        >Features</div>
+                        
+                        <div className={scrolled ? 'navsScrolled' : 'navs'}
+                            onClick={() => {
+                                navigate('/premium');
+                                window.scroll({
+                                    top: 0,
+                                    behavior: 'auto'
+                                })
+                            }}
+                        >Premium</div>
+
                     </div>
                     <div className="right">
                         <span className={scrolled ? 'logInScrolled' : 'login'} id={toggle && 'toggleR'}
