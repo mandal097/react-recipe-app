@@ -1,0 +1,790 @@
+.home_landing_page {
+  height: 110vh;
+  width: 100%;
+  border-bottom-left-radius: 30rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  animation: widgets 200ms ease 1;
+  .home_landing_page_wrapper {
+    width: 1200px;
+    height: calc(110vh - 12rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .left {
+      width: 55%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      .left_head {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        color: #fff;
+        h1 {
+          font-size: 8rem;
+          line-height: 8rem;
+          font-weight: bolder;
+          text-transform: capitalize;
+          color: #fff;
+        }
+        span {
+          font-size: 4rem;
+          font-weight: bolder;
+        }
+        .light {
+          font-size: 2.6rem;
+          font-weight: 400;
+        }
+      }
+    }
+    .right {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+.home_third_page {
+  width: 100%;
+  .home_third_page_wrapper {
+    width: 1100px;
+    margin: 0 auto;
+    .home_third_page_first {
+      width: 100%;
+      height: 120vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .home_third_page_first_left {
+        width: 55%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        .home_third_page_first_left_top {
+          width: 100%;
+          height: 30%;
+          h2 {
+            font-size: 6.6rem;
+            text-transform: capitalize;
+            font-weight: bolder;
+            line-height: 7rem;
+            color: #333;
+          }
+          h4 {
+            font-size: 2.6rem;
+            text-transform: capitalize;
+            color: rgba(0, 0, 0, 0.7);
+            font-weight: bolder;
+            line-height: 2rem;
+            span {
+              color: var(--dark-greenish-col);
+            }
+          }
+        }
+        .home_third_page_first_left_bottom {
+          height: 65%;
+          width: 85%;
+          display: grid;
+          place-items: center;
+          position: relative;
+          z-index: 2;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 17rem;
+            height: 17rem;
+            bottom: -2rem;
+            left: -2rem;
+            border-radius: 2rem;
+            background: var(--greenish-col);
+            z-index: -1;
+          }
+          .img {
+            height: 100%;
+            width: 100%;
+            border-radius: 2rem;
+            border-top-left-radius: 12rem;
+            background-image: url("../../../public/images/thirdpage1.avif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow: hidden;
+          }
+        }
+      }
+      .home_third_page_first_right {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .home_third_page_first_right_top {
+          height: 30%;
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          img {
+            height: 100%;
+            width: 70%;
+            object-fit: contain;
+          }
+        }
+        .home_third_page_first_right_bottom {
+          height: 65%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+          padding: 1rem;
+          p {
+            font-size: 1.7rem;
+            color: rgba(0, 0, 0, 0.8);
+            font-weight: 400;
+            text-align: left;
+          }
+          .points {
+            height: 40%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .point {
+              width: 48%;
+              height: 4rem;
+              display: flex;
+              align-items: center;
+              .left {
+                width: 3.3rem;
+                height: 3.3rem;
+                border-radius: 50%;
+                background-image: url("../../../public/images//tick.svg");
+                background-size: contain;
+                margin-right: 1rem;
+              }
+              .right {
+                font-size: 1.5rem;
+                color: rgba(0, 0, 0, 0.7);
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.keto_for_everyone {
+  width: 100%;
+  height: 80vh;
+  margin-top: 20rem;
+  .keto_for_everyone_wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .left {
+      width: 40%;
+      height: 100%;
+      .left_head {
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        p {
+          font-size: 1.7rem;
+          color: rgba(0, 0, 0, 0.7);
+          font-weight: 400;
+        }
+      }
+      .bottom {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        .points {
+          width: 100%;
+          height: auto;
+          display: flex;
+          //   align-items: center;
+          .left {
+            width: 3rem;
+            height: 3rem;
+            margin-right: 2rem;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          .hat {
+            background-image: url("../../../public/images/chefhat.svg");
+          }
+          .chef {
+            background-image: url("../../../public/images/chefhat2.svg");
+          }
+          .niddle {
+            background-image: url("../../../public/images/niddle.svg");
+          }
+          .point {
+            p {
+              font-size: 1.6rem;
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+    .right {
+      width: 50%;
+      height: 100%;
+      position: relative;
+      z-index: 2;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 20rem;
+        height: 20rem;
+        background-color: orangered;
+        top: -2rem;
+        right: -2rem;
+        border-radius: 1.5rem;
+        z-index: -1;
+      }
+      .img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 3rem;
+        border-bottom-right-radius: 15rem;
+        background-image: url("../../../public/images/ketoforeveryone.avif");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+.keto_for_life {
+  height: 85vh;
+  width: 100%;
+  margin-top: 15rem;
+  .keto_for_life_wrapper {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      width: 50%;
+      height: 100%;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 20rem;
+        height: 20rem;
+        background-color: red;
+        top: -2rem;
+        left: -2rem;
+        border-radius: 2rem;
+        z-index: -1;
+      }
+      .img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 3rem;
+        border-top-right-radius: 15rem;
+        background-image: url("../../../public/images/ketoforlife.avif");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+    .right {
+      width: 45%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .right_head {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        p {
+          font-size: 1.7rem;
+          color: rgba(0, 0, 0, 0.8);
+        }
+      }
+    }
+    .middle {
+      width: 100%;
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      .points {
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        .points_left {
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+          background-image: url("../../../public/images/radiodots.svg");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-size: cover;
+          margin-right: 1.3rem;
+        }
+        .point {
+          p {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.6);
+          }
+        }
+      }
+    }
+    .bottom {
+      width: 100%;
+      height: auto;
+      p {
+        font-size: 1.7rem;
+        color: rgba(0, 0, 0, 0.6);
+        font-weight: 400;
+      }
+    }
+  }
+}
+.apps_and_devices {
+  width: 100%;
+  height: auto;
+  margin-top: 8rem;
+  .apps_and_devices_wrapper {
+    width: 1100px;
+    height: 85vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .content_box {
+      width: 50%;
+      height: auto;
+      .apps_header {
+        font-size: 5rem;
+        font-weight: bolder;
+        text-align: center;
+        color: rgb(31, 2, 23);
+      }
+      .para {
+        font-size: 1.7rem;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.8);
+        text-align: center;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("../../../public/images/curves.svg");
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      top: 0;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../../../public/images/curves.svg");
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: 0%;
+      top: 0;
+      right: 0;
+      transform: rotateY(180deg);
+    }
+    .icons_ {
+      position: absolute;
+      height: 10rem;
+      width: 10rem;
+      background-color: white;
+      box-shadow: 1px 1px 20px rgb(180, 167, 167);
+      border-radius: 50%;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 2;
+    }
+    .icons_1 {
+      top: 5rem;
+      left: 10rem;
+      background-image: url("../../../public/images/fitbit.avif");
+    }
+    .icons_2 {
+      top: 5rem;
+      right: 10rem;
+      background-image: url("../../../public/images/heart.avif");
+    }
+    .icons_3 {
+      bottom: 5rem;
+      left: 10rem;
+      background-image: url("../../../public/images/stackheart.avif");
+    }
+    .icons_4 {
+      bottom: 5rem;
+      right: 10rem;
+      background-image: url("../../../public/images/garmin.svg");
+    }
+  }
+}
+.keto_recipe {
+  width: 100%;
+  height: auto;
+  margin: 5rem 0;
+  .keto_recipe_wrapper {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .keto_recipe_head {
+      width: 100%;
+      height: 10%;
+      h2 {
+        font-size: 5rem;
+        text-align: center;
+        color: var(--greenish-col);
+      }
+    }
+    .keto_recipe_cards_container {
+      width: 90%;
+      height: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .keto_recipe_cards {
+        flex: 1 1 520px;
+        min-width: 520px;
+        max-width: 520px;
+        height: 20rem;
+        border-radius: 1rem;
+        margin-top: 1rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        cursor: pointer;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        &:hover {
+          .img_div {
+            transform: scale(1);
+          }
+          .text {
+            h2 {
+              span {
+                color: var(--greenish-col);
+              }
+            }
+          }
+        }
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.3)
+        );
+        .text {
+          width: auto;
+          height: auto;
+          margin: 2rem;
+          h2 {
+            font-size: 3.3rem;
+            color: white;
+            font-weight: 100;
+            line-height: 3.6rem;
+            span {
+              font-size: 4rem;
+              color: white;
+              font-weight: 600;
+              transition: al 100ms ease-in-out;
+            }
+          }
+        }
+        .img_div {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          transform: scale(1.05);
+          transition: transform 150ms ease-in-out;
+        }
+        .keto_recipe_cards_1 {
+          background-image: url("../../../public/images/ketorecipe_1.avif");
+        }
+        .keto_recipe_cards_2 {
+          background-image: url("../../../public/images/ketorecipe_2.avif");
+        }
+        .keto_recipe_cards_3 {
+          background-image: url("../../../public/images/ketorecipe_3.avif");
+        }
+        .keto_recipe_cards_4 {
+          background-image: url("../../../public/images/ketorecipe_4.avif");
+        }
+      }
+    }
+    .keto_recipe_button {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+      button {
+        width: 23rem;
+        height: 5.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: var(--greenish-col);
+        border: none;
+        border-radius: 50rem;
+        font-size: 1.6rem;
+        font-weight: bolder;
+        cursor: pointer;
+        transition: all 200ms linear;
+        &:hover {
+          background-color: var(--dark-greenish-col);
+          transform: translateY(0.5rem);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .home_landing_page {
+    width: 100%;
+    .home_landing_page_wrapper {
+      width: 95%;
+      .left {
+        .left_head {
+          h1 {
+            font-size: 5rem;
+            line-height: 4rem;
+          }
+          span {
+            font-size: 3rem;
+          }
+          .light {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+  .home_third_page {
+    width: 100%;
+    .home_third_page_wrapper {
+      width: 95%;
+    }
+  }
+  .keto_for_life {
+    width: 100%;
+    .keto_for_life_wrapper {
+      width: 95%;
+    }
+  }
+  .apps_and_devices {
+    .apps_and_devices_wrapper {
+      width: 90%;
+    }
+  }
+  .keto_recipe {
+    height: auto;
+    .keto_recipe_wrapper {
+      width: 95%;
+      height: auto;
+      .keto_recipe_cards_container {
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .home_landing_page {
+    .home_landing_page_wrapper {
+      .left {
+        .email_subscribe {
+          .inputs {
+            .button {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .home_landing_page {
+    height: auto;
+    border-bottom-left-radius: 15rem;
+    .home_landing_page_wrapper {
+      width: 100%;
+      height: auto;
+      margin-top: 10rem;
+      flex-direction: column;
+      .left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 70vh;
+        .left_head {
+          width: 80%;
+          h1 {
+            font-size: 5rem;
+            text-align: left;
+          }
+          span {
+            font-size: 3rem;
+          }
+          .light {
+            font-size: 2rem;
+          }
+        }
+        .email_subscribe {
+          width: 80%;
+          .inputs {
+            width: 100%;
+            .button {
+              font-size: 1.3rem;
+            }
+          }
+        }
+        .apps {
+          width: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .right {
+        width: 50%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .home_third_page {
+    width: 100%;
+    height: auto;
+    .home_third_page_wrapper {
+      width: 95%;
+      height: auto;
+      .home_third_page_first {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        &::after {
+          left: 3rem;
+        }
+        .home_third_page_first_left {
+          align-items: center;
+          width: 100%;
+          .home_third_page_first_left_top {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3rem;
+            h1 {
+              font-size: 5rem;
+            }
+          }
+          .home_third_page_first_left_bottom {
+            width: 90%;
+            height: 85vh;
+          }
+        }
+        .home_third_page_first_right {
+          width: 100%;
+          justify-content: center;
+          .home_third_page_first_right_top {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .keto_for_life {
+    width: 100%;
+    height: auto;
+    .keto_for_life_wrapper {
+      width: 95%;
+      flex-direction: column;
+      .left {
+        order: 2;
+        width: 100%;
+        height: 85vh;
+        margin-top: 7rem;
+      }
+      .right {
+        width: 100%;
+      }
+    }
+  }
+  .apps_and_devices {
+    .apps_and_devices_wrapper {
+      width: 96%;
+      .content_box {
+        .apps_header {
+          font-size: 3rem;
+        }
+        .para {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
